@@ -6,7 +6,7 @@
   <script src="../../blockly_compressed.js"></script>
   <script src="../../blocks_compressed.js"></script>
   <script src="../../javascript_compressed.js"></script>
-<script src="../../msg/js/zh-hans.js"></script>
+<script src="https://2947721120.github.io/blockly/msg/js/zh-hans.js"></script>
   
   <style>
     body {
@@ -103,7 +103,7 @@
         <block type="text_print" inline="false">
           <value name="TEXT">
             <block type="text">
-              <field name="TEXT">Don't panic</field>
+              <field name="TEXT">正确执行</field>
             </block>
           </value>
         </block>
@@ -112,7 +112,7 @@
         <block type="text_print" inline="false">
           <value name="TEXT">
             <block type="text">
-              <field name="TEXT">Panic</field>
+              <field name="TEXT">错误执行</field>
             </block>
           </value>
         </block>
@@ -128,14 +128,14 @@
                                workspace);
 
     function showCode() {
-      // Generate JavaScript code and display it.
+      // 生成JavaScript代码并显示它。
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       var code = Blockly.JavaScript.workspaceToCode(workspace);
       alert(code);
     }
 
     function runCode() {
-      // Generate JavaScript code and run it.
+      // 生成JavaScript代码并运行它。
       window.LoopTrap = 1000;
       Blockly.JavaScript.INFINITE_LOOP_TRAP =
           'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';

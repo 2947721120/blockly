@@ -1,3 +1,8 @@
+##CN DEMO
+
+
+语言引用脚本
+../sg/js/zh-hans.js"></script>
 ##CN 机器翻译,请参阅下面EN原文理解
 ＃Blockly
 
@@ -6,7 +11,7 @@
 
 **该项目页面https://developers.google.com/blockly/**
 
-！[]（https://developers.google.com/blockly/sample.png）
+![]（https://developers.google.com/blockly/sample.png）
 
 
 ##EN

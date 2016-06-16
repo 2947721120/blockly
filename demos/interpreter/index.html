@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Blockly Demo: JS Interpreter</title>
+  <title>翻译：JS blockly演示</title>
   <script src="acorn_interpreter.js"></script>
   <script src="../../blockly_compressed.js"></script>
   <script src="../../blocks_compressed.js"></script>
@@ -23,12 +23,12 @@
   <h1><a href="https://developers.google.com/blockly/">Blockly</a> &gt;
     <a href="../index.html">Demos</a> &gt; JS Interpreter</h1>
 
-  <p>This is a simple demo of executing code with a sandboxed JavaScript interpreter.</p>
+  <p>这是执行一个简单的代码演示了沙盒JavaScript解释器.</p>
 
   <p>&rarr; More info on <a href="https://developers.google.com/blockly/installation/js-interpreter">JS Interpreter</a>&hellip;</p>
 
   <p>
-    <button onclick="parseCode()">Parse JavaScript</button>
+    <button onclick="parseCode()">解析JavaScript的</button>
     <button onclick="stepCode()" id="stepButton" disabled="disabled">Step JavaScript</button>
   </p>
 
@@ -146,7 +146,7 @@
       interpreter.setProperty(scope, 'prompt',
           interpreter.createNativeFunction(wrapper));
 
-      // Add an API function for highlighting blocks.
+      // 添加一个用于突出显示块的接口函数。
       var wrapper = function(id) {
         id = id ? id.toString() : '';
         return interpreter.createPrimitive(highlightBlock(id));
@@ -187,7 +187,7 @@
         }
       }
       if (highlightPause) {
-        // A block has been highlighted.  Pause execution here.
+        // 一块突出显示。这里暂停执行。
         highlightPause = false;
       } else {
         // Keep executing until a highlight statement is reached.
